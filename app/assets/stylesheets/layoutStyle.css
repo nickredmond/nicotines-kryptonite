@@ -1,0 +1,24 @@
+#header{
+
+}
+
+#navBar{
+	background-color: #CCE7FF;
+	max-width: 400px;
+	overflow-x: visible;
+	float: left;
+}
+
+#navLinks li {
+	list-style-type: none;
+	max-width: 600px;
+	min-width: 500px;
+	background-image: "~/assets/images/navLinkBackground.png";
+}
+
+#content{
+	float: left;
+	min-width: 800px;
+}
+
+/* TODO: Update widths to be more mobile-friendly */
