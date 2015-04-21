@@ -1,24 +1,59 @@
+body{
+	font-family: sans-serif;
+}
+
 #header{
 
 }
 
 #navBar{
 	background-color: #CCE7FF;
-	max-width: 400px;
+	max-width: 300px;
 	overflow-x: visible;
 	float: left;
 }
 
+#navLinks{
+	min-width: 350px;
+}
+
 #navLinks li {
 	list-style-type: none;
-	max-width: 600px;
-	min-width: 500px;
-	background-image: "~/assets/images/navLinkBackground.png";
+	max-width: 30%;
+	min-width: 400px;
+	/*min-height: 60px;*/
+	max-height: 65px;
+	background: url('/assets/navLinkBackground.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 5px 0px 5px 0px;
+	color: white;
+}
+
+#navLinks li:hover{
+	background: url('/assets/navLinkBackgroundHover.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: black;
+}
+
+#navLinks li a {
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding: 0px 200px 0px 20px;
+	color: inherit;
+	font-size: 1.5em;
+}
+
+#navLinks li a:hover{
+	text-decoration: underline;
 }
 
 #content{
 	float: left;
-	min-width: 800px;
+	min-width: 500px;
+	margin-left: 200px;
 }
 
 /* TODO: Update widths to be more mobile-friendly */
