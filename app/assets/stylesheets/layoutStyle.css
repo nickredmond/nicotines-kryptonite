@@ -3,14 +3,50 @@ body{
 }
 
 #header{
-
+	max-width: 95%;
+	min-width: 500px;
+	background-color: #0000A2;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-left: 5px;
+	height: 40px;
 }
+
+#headerLogo{
+	background: url('/assets/logo.png');
+	width: 388px;
+	height: 30px;
+	margin: 5px 0px 0px 5px;
+}
+
+#loginLinks{
+	float: right;
+	margin-top: 15px;
+}
+
+.headerButton{
+	text-decoration: none;
+	background-color: #CCE7FF;
+	padding: 5px;
+	border-radius: 5px;
+	color: blue;
+}
+
+.headerButton:hover{
+	color: white;
+	background-color: #0000A2;
+}
+
+/*.headerButton:visited{
+	color: inherit;
+}*/
 
 #navBar{
 	background-color: #CCE7FF;
 	max-width: 300px;
 	overflow-x: visible;
 	float: left;
+	margin-left: 10px;
 }
 
 #navLinks{
@@ -28,6 +64,7 @@ body{
 	background-repeat: no-repeat;
 	padding: 5px 0px 5px 0px;
 	color: white;
+	margin-bottom: 5px;
 }
 
 #navLinks li:hover{
@@ -41,7 +78,7 @@ body{
 	text-decoration: none;
 	margin-top: 20px;
 	margin-left: 10px;
-	padding: 0px 200px 0px 20px;
+	padding: 0px 150px 0px 20px;
 	color: inherit;
 	font-size: 1.5em;
 }
@@ -52,8 +89,8 @@ body{
 
 #content{
 	float: left;
-	min-width: 500px;
-	margin-left: 200px;
+	width: 50%;
+	margin-left: 100px;
 }
 
 /* TODO: Update widths to be more mobile-friendly */

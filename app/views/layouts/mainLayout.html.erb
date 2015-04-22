@@ -6,10 +6,21 @@
 	</head>
 	<body>
 		<div id="header">
+			<div id="headerLogo"></div>
+			<div id="loginLinks">
+				<%= link_to "Log In", {controller: "account", action: "login"}, :class => "headerButton" %>
+				<%= link_to "Sign Up", {controller: "home", action: "signup"}, :class => "headerButton" %>
+			</div>
 		</div>
 		<div id="navBar">
 			<ul id="navLinks">
 				<li><%= link_to "Home", controller: "home", action: "index" %></li>
+				<!-- if logged in, link to Dashboard, Journal, Milestones, and WhyAmiDoingThis -->
+				<!-- if NOT logged in, link to WhyShouldiQuit -->
+				<li><%= link_to "How We Can Help", controller: "home", action: "features" %></li>
+				<li><%= link_to "Resources", controller: "home", action: "resources" %></li>
+				<li><%= link_to "Tobacco Facts", controller: "home", action: "facts" %></li>
+				<li><%= link_to "Forum", controller: "forum", action: "index" %></li>
 			</ul>
 		</div>	
 		<div id="content">
