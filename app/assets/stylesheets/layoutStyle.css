@@ -1,15 +1,20 @@
+/* SPECIFIC TO LAYOUT PAGE */
+
 body{
 	font-family: sans-serif;
 }
 
 #header{
-	max-width: 95%;
+	/*max-width: 95%;*/
 	min-width: 500px;
+	width: 95%;
 	background-color: #0000A2;
 	border-radius: 10px;
 	padding-top: 5px;
 	padding-left: 5px;
 	height: 40px;
+	position: fixed;
+	top: 0;
 }
 
 #headerLogo{
@@ -37,16 +42,13 @@ body{
 	background-color: #0000A2;
 }
 
-/*.headerButton:visited{
-	color: inherit;
-}*/
-
 #navBar{
 	background-color: #CCE7FF;
 	max-width: 300px;
 	overflow-x: visible;
 	float: left;
 	margin-left: 10px;
+	margin-top: 35px;
 }
 
 #navLinks{
@@ -91,6 +93,22 @@ body{
 	float: left;
 	width: 50%;
 	margin-left: 100px;
+	height: 4000px;
+	margin-top: 40px;
+}
+
+/* COMMON STYLING */
+
+.standardLink {
+	color: #0000A2;
+	float: right;
+	margin-top: 5px;
+}
+
+.standardLink:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: blue;
 }
 
 /* TODO: Update widths to be more mobile-friendly */
