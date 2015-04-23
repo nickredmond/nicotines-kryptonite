@@ -1,0 +1,34 @@
+#topStoryImage img {
+	width: 90%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+#topStory h2 {
+	margin-left: 5%;
+}
+
+#topStory p {
+	padding: 0 5% 10px 5%;
+}
+
+#topStory {
+	min-width: 400px;
+	padding-top: 15px;
+	border-radius: 10px;
+	background-color: #DDD;
+	margin-top: 15px;
+}
+
+#tobaccoDeathsRecord {
+	margin-top: 15px;
+	border-radius: 10px;
+	background-color: #0000A2;
+	color: white;
+	padding: 5px;
+	font: 1.5em normal Arial, sans-serif;
+	min-width: 400px;
+	text-align: center;
+	vertical-align: middle;
+}

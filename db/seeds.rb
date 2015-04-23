@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Story.create({ image_url: 'assets/stories/images/helloworld.jpg', body_url: 'assets/stories/text/helloworld.html',
+# 				summary: 'This is a mother loving summary with all of you mother loving needs.', 
+# 				title: 'HELLO WORLD', source: 'Nick Redmond Enterprises' })
+
+theStory = Story.first
+theStory.update_attribute(:image_url, 'stories/helloworld.jpg')

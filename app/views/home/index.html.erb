@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<%= stylesheet_link_tag "homeIndex" %>
+<%= javascript_include_tag "homeScript" %>
+
+<div id="topStory">
+	<div id="topStoryImage">
+		<%= image_tag @topStory.image_url %>
+	</div>
+	<h2><%= @topStory.title %></h2>
+	<p><%= truncate(@topStory.summary, :length => 50) %></p>
+</div>
+<div id="tobaccoDeathsRecord"></div>

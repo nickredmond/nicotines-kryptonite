@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   layout 'mainLayout'
 
   def index
+    @topStory = Story.first
   end
 
   def facts
