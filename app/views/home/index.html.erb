@@ -1,12 +1,15 @@
 <%= stylesheet_link_tag "homeIndex" %>
-<%= javascript_include_tag "homeScript" %>
 
 <div id="topStory">
 	<div id="topStoryImage">
 		<%= image_tag @topStory.image_url %>
 	</div>
 	<h2><%= @topStory.title %></h2>
-	<p><%= truncate(@topStory.summary, :length => 50) %></p>
+	<p><%= truncate(@topStory.summary, :length => 50) %>&nbsp;
+		<%= link_to "Read More >>>", { controller: "story", action: "viewstory", id: @topStory.id },
+		 :class => 'standardLink' %></p>
 </div>
 <div id="tobaccoDeathsRecord"></div>
 <%= link_to "Don't add to the toll! >>>", { controller: "home", action: "signup" }, :class => 'standardLink' %>
+
+<%= javascript_include_tag "homeScript" %>

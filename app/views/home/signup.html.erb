@@ -1,2 +1,100 @@
-<h1>Home#signup</h1>
-<p>Find me in app/views/home/signup.html.erb</p>
+<%= stylesheet_link_tag "signupStyle" %>
+<%= csrf_meta_tag %>
+
+<div id="validationArea" style="display: none;">
+	<ul id="errorList"></ul>
+</div>
+
+<div id="beforeBegin" class="panel">
+	<span class="panelTitle">Before we begin...</span>
+	<div class="panelContent">
+		<h3>Are you ready for the challenge?</h3>
+		<p>Some text</p>
+		<button class="signupButton" onclick="switchPanels('beforeBegin', 'userInfo')">Next ></button>
+	</div>
+</div>
+
+<div id="userInfo" class="panel" style="visibility: hidden;">
+	<span class="panelTitle">First, let's get to know you!</span>
+	<div class="panelContent">
+		<div>
+			Name: <%= text_field_tag "fullName" %>
+		</div>
+		<div>
+			Date of Birth:&nbsp
+			<%= date_select("user", "date_of_birth", start_year: 1905) %>
+		</div>
+		<div>
+			Where do you live? <%= select_tag :place_of_residence,
+									options_for_select(@us_states, @us_states[0]) %>
+		</div>
+		<div>
+			<p class="paragraphNoMargin">What type(s) of tobacco products do you use regularly?</p>
+			<form id="tobaccoTypesForm">
+				<div class="checkboxDiv">
+					<input type="checkbox" id="areCigarettesUsed" name="chk_group" value="value1">Cigarettes</input>
+				</div>
+				<div class="checkboxDiv">
+					<input type="checkbox" id="areSmokelessUsed" name="chk_group" value="value2">Smokeless Tobacco</input>
+				</div>
+				<div class="checkboxDiv">
+					<input type="checkbox" id="areCigarsUsed" name="chk_group" value="value3">Cigars</input>
+				</div>
+			</form>
+		</div>
+		<div>
+			How will you be be quitting? <%= select_tag :quitting_method, 
+												options_for_select(@quitting_options, @quitting_options[0]) %>
+		</div>
+		<button class="signupButton" onclick="addictionInfoClick()">Next ></button>
+	</div>
+</div>
+
+<div id="addictionInfo" class="panel" style="visibility: hidden;">
+	<span class="panelTitle">We'd like to know about your addiction</span>
+	<div class="panelContent">
+		<div class="cigarettesField tobaccoTypeField">
+			About how many cigarettes do you smoke per day? <%= text_field_tag "cigarettesPerDay" %>
+		</div>
+		<div class="dipsField tobaccoTypeField">
+			About how many dips do you take per day? <%= text_field_tag "dipsPerDay" %>
+		</div>
+		<div class="cigarsField tobaccoTypeField">
+			About how many cigars do you smoke per day? <%= text_field_tag "cigarsPerDay" %>
+		</div>
+		<div class="cigarettesField tobaccoTypeField">
+			What is your favorite brand of cigarettes? <%= select_tag :cigarette_brand,
+															options_for_select(@cigarette_brands, @cigarette_brands[0]) %>
+		</div>
+		<div class="dipsField tobaccoTypeField">
+			What is your favorite brand of smokeless tobacco? <%= select_tag :dip_brand,
+															options_for_select(@dip_brands, @dip_brands[0]) %>
+		</div>
+		<div class="cigarsField tobaccoTypeField">
+			What is your favorite brand of cigars? <%= select_tag :cigar_brand,
+															options_for_select(@cigar_brands, @cigar_brands[0]) %>
+		</div>
+		<button class="signupButton" onclick="accountInfoClick()">Next ></button>
+	</div>
+</div>
+
+<div id="accountInfo" class="panel" style="visibility: hidden;">
+	<span class="panelTitle">Now let's finalize your account!</span>
+	<div class="panelContent">
+		<div>
+			Username: <%= text_field_tag "username" %>
+		</div>
+		<div>
+			Email: <%= text_field_tag "email" %>
+		</div>
+		<div>
+			Password: <input id="password" type="password" />
+		</div>
+		<div>
+			Confirm Password: <input id="passwordConfirmation" type="password" />
+		</div>
+		<button class="signupButton" onclick="signupClick()">Start My Quit!</button>
+	</div>
+</div>
+
+<%= javascript_include_tag "signup" %>

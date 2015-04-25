@@ -12,5 +12,7 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( layoutStyle.css )
 Rails.application.config.assets.precompile += %w( homeIndex.css )
+Rails.application.config.assets.precompile += %w( signupStyle.css )
 
 Rails.application.config.assets.precompile += %w( homeScript.js )
+Rails.application.config.assets.precompile += %w( signup.js )

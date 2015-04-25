@@ -27,6 +27,7 @@ body{
 #loginLinks{
 	float: right;
 	margin-top: 15px;
+	clear: both;
 }
 
 .headerButton{

@@ -17,7 +17,7 @@
 			<ul id="navLinks">
 				<li><%= link_to "Home", controller: "home", action: "index" %></li>
 				<!-- if logged in, link to Dashboard, Journal, Milestones, and WhyAmiDoingThis -->
-				<!-- if NOT logged in, link to WhyShouldiQuit -->
+				<!-- if NOT logged in: <%= link_to "Why Should I Quit?", controller: "story", action: "index" %> -->
 				<li><%= link_to "How We Can Help", controller: "home", action: "features" %></li>
 				<li><%= link_to "Resources", controller: "home", action: "resources" %></li>
 				<li><%= link_to "Tobacco Facts", controller: "home", action: "facts" %></li>

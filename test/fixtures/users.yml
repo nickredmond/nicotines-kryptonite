@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  username: MyString
+  birthdate: 2015-04-24 08:06:20
+  stateOfResidence: MyString
+  cigarettesPerDay: 1
+  dipsPerDay: 1
+  cigarsPerDay: 1
+  cigaretteBrandId: 1
+  dipBrandId: 1
+  cigarBrandId: 1
+  email: MyString
+  password_digest: MyString
+
+two:
+  name: MyString
+  username: MyString
+  birthdate: 2015-04-24 08:06:20
+  stateOfResidence: MyString
+  cigarettesPerDay: 1
+  dipsPerDay: 1
+  cigarsPerDay: 1
+  cigaretteBrandId: 1
+  dipBrandId: 1
+  cigarBrandId: 1
+  email: MyString
+  password_digest: MyString

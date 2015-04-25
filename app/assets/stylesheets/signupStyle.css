@@ -1,0 +1,60 @@
+.panel {
+	padding-bottom: 10px;
+	border-radius: 10px;
+	background-color: #0000A2;
+	text-align: center;
+	min-width: 400px;
+	margin-top: 10px;
+}
+
+.panelContent{
+	overflow: hidden;
+	word-wrap: break-word;
+	background-color: #CCE7FF;
+	text-align: left;
+	padding: 5px 10px 5px 10px;
+}
+
+.panelContent div {
+	margin-bottom: 10px;
+}
+
+.panelTitle {
+	color: white;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 2em;
+	padding-bottom: 5px;
+}
+
+.signupButton {
+	float: right;
+	border-radius: 10px;
+	background-color: #0000A2;
+	color: white;
+	border: 2px solid #0000A2;
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+.signupButton:hover {
+	cursor: pointer;
+	background-color: #CCE7FF;
+	color: black;
+}
+
+.checkboxDiv {
+	margin: 0 0 5px 10px;
+}
+
+.paragraphNoMargin {
+	margin-bottom: 5px;
+}
+
+#validationArea {
+	border-radius: 10px;
+	background-color: #FFBABA;
+	color: #910000;
+	padding: 5px 0 5px 0;
+	min-width: 400px;
+}

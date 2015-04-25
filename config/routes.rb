@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'story/index'
+
+  get 'story/viewstory'
+
+  get 'story/viewpage'
+
   root :to => 'home#index'
 
   get 'home/index'
@@ -27,4 +33,8 @@ Rails.application.routes.draw do
   # Account
 
   get 'account/login'
+
+  # Helper Actions
+  get '/get_date' => 'home#get_date'
+  post '/account/create' => 'account#create'
 end
