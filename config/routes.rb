@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'dashboard/index'
+
+  get 'dashboard/milestones'
+
+  get 'dashboard/journal'
+
+  get 'dashboard/whyquit'
+
   get 'story/index'
 
   get 'story/viewstory'

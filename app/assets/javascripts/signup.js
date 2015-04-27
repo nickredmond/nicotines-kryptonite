@@ -166,9 +166,9 @@ function signupClick(){
 			url: '/account/create',
 			data: {
 				fullName: document.getElementById('fullName').value,
-				birthYear: document.getElementById('user_date_of_birth_1i').value,
-				birthMonth: document.getElementById('user_date_of_birth_2i').value,
-				birthDay: document.getElementById('user_date_of_birth_3i').value,
+				birthYear: $('#user_date_of_birth_1i').val(),
+				birthMonth: $('#user_date_of_birth_2i').val(),
+				birthDay: $('#user_date_of_birth_3i').val(),
 				placeOfResidence: document.getElementById('place_of_residence').value,
 				cigarettesPerDay: document.getElementById('cigarettesPerDay').value,
 				dipsPerDay: document.getElementById('dipsPerDay').value,
